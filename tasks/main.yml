@@ -1,0 +1,12 @@
+---
+
+- name: Ensure IP added
+  template:
+    src: '{{ role_path }}/templates/60-floating-ip.yaml.j2'
+    dest: '/etc/netplan/60-floating-ip.yaml'
+  notify: netplan apply
+
+- name: Force netplan apply
+  meta: flush_handlers
+
+...

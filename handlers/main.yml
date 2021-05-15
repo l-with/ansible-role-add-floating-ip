@@ -1,0 +1,7 @@
+---
+
+- name:       Apply Netplan Configuration
+  command:    netplan apply
+  listen:     netplan apply
+
+...

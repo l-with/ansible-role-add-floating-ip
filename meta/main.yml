@@ -1,0 +1,10 @@
+---
+
+galaxy_info:
+  author: l-with
+  role_name: add-floating-ip
+  platforms:
+  - name: Ubuntu
+    versions: focal
+
+...
