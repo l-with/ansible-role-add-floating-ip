@@ -1,8 +1,12 @@
 ---
 
 galaxy_info:
-  author: l-with
-  role_name: add-floating-ip
+  role_name: add_floating_ip
+  description: Add Floating IP persistent to host
+  author: l_with
+  license: MIT
+  license_file: LICENSE
+  min_ansible_version: 2.9
   platforms:
   - name: Ubuntu
     versions: focal

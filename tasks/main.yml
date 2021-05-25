@@ -1,9 +1,10 @@
 ---
 
 - name: Ensure IP added
-  template:
+  ansible.builtin.template:
     src: templates/floating-ip.yaml.j2
     dest: "/etc/netplan/{{ floating_ip_netplan_yml }}"
+    mode: u=rw,g=r
   notify: netplan apply
 
 - name: Force netplan apply
